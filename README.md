@@ -10,6 +10,7 @@ DEVICE_ORIENTATION 屏幕方向
 `
 
 # 中间库实现来源
+finscn/weapp-adapter:https://github.com/finscn/weapp-adapter
 
 # 已知缺陷
 1、音频支持比较弱，可以说没有，可采取common/media/Sound & SoundChannel API代替；或自行实现。

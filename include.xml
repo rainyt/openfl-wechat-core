@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<assets path="lib" rename="lib" embed="false"/>
+	<assets path="webapp-adapter" rename="webapp-adapter" embed="false"/>
+	<!-- 微信小游戏适配库 -->
+	<!-- 微信小游戏入口 -->
+	<template path="game.js"/>
+	<template path="game.json"/>
+	<template path="project.config.json"/>
+	<!-- 微信小游戏定义标示 -->
+	<haxedef name="wechat"/>
+	<!--  微信API -->
+	<source path='src'/>
+	<!-- 自定义音频 -->
+	<!-- <haxedef name="extsound"/> -->
+</project>

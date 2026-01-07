@@ -15,3 +15,7 @@
 # 已知缺陷
 - 1、音频支持比较弱，可以说没有，可采取common/media/Sound & SoundChannel API代替；或自行实现。
 - 2、遮罩可能失效？
+
+# 项目API规避
+- 1、不要使用BitmapData任何像素相关的API操作，如copyPixels等；
+- 2、如果需要绘制任何图像，请使用BitmapData.disposeImage()，转为帧缓冲来渲染；

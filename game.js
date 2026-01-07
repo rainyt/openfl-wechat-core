@@ -1,7 +1,21 @@
-import './webapp-adapter/index.js'
 import './lib/howler.min.js'
-import './lib/howler.min.js'
-import './webapp-adapter/wxPlatform.js'
+import './index.js'
+import core from './zygameui-dom.js'
+
+if(window.isWebView != true){
+    window.Window = Object;
+    window.Image = core.Image;
+    window.Canvas = core.Canvas;
+    window.HTMLCanvasElement = core.HTMLCanvasElement;
+    window.HTMLDocument = core.HTMLDocument;
+    window.HTMLElement = core.HTMLElement;
+    window.XMLHttpRequest = core.XMLHttpRequest;
+    window.WebSocket = core.WebSocket;
+    window.CanvasRenderingContext2D = core.CanvasRenderingContext2D;
+}
+
+window.canvas = core.Window.canvas;
+
 
 // 微信bannerkey
 window.bannerAdKey = '::SET_WX_BANNERKEY::';

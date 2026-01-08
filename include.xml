@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<assets path="zygameui-dom.js" rename="zygameui-dom.js" embed="false" />
+	<assets path="adapter/zygameui-dom.js" rename="zygameui-dom.js" embed="false" />
 	<assets path="index.js" rename="index.js" embed="false" />
 	<!-- 微信小游戏适配库 -->
 	<!-- 微信小游戏入口 -->

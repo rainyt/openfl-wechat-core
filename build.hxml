@@ -1,6 +1,111 @@
--main WxCore
+# 
+# -D pool_use
+
+--each
+
+--next
+
+-main Window
 -lib openfl
 -lib lime
--lib zygameui
+-D ks
 -cp src
--js wxcore.js
+-js adapter/zygameui-ks-dom.js
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-D g4399
+-cp src
+-js adapter/zygameui-4399-dom.js
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-cp src
+-js adapter/zygameui-dom.js
+--library closure
+-D closure_overwrite
+-D closure_warning_level=QUIET
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-D OPENDATA
+-cp src
+-js adapter/zygameui-dom-wechat-opendata.js
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-D tt
+# 去除缓存支持
+-D uncache
+-cp src
+-js adapter/zygameui-tt-dom.js
+--library closure
+-D closure_overwrite
+-D closure_warning_level=QUIET
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-D baidu
+# 不支持缓存
+-D uncache
+-cp src
+-js adapter/zygameui-baidu-dom.js
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-D qqquick
+# 不支持base64数据格式图片，使用代替方案
+# -D unbase64image
+# 不支持缓存
+# -D uncache
+-cp src
+-js adapter/zygameui-qq-dom.js
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-D bili
+# 不支持base64数据格式图片，使用代替方案
+# -D unbase64image
+# 不支持缓存
+-D uncache
+-cp src
+-js adapter/zygameui-bilibili-dom.js
+
+--next
+
+-main Window
+-lib openfl
+-lib lime
+-D qihoo
+-cp src
+-js adapter/zygameui-qihoo-dom.js
+
+--next
+
+--main Window
+-lib openfl
+-lib lime
+-D meituan
+-cp src
+-js adapter/zygameui-meituan-dom.js
